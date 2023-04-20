@@ -1,0 +1,16 @@
+name : Calling Tests
+
+on : [push]
+
+jobs:
+    run-shell-command: 
+      runs-on: ubuntu-latest
+      steps: 
+      - name: Duration Call Tests
+        run : | 
+          echo "12 hr call tests action"
+          echo "2 hr call tests action"
+      - name : Inbound Call Tests
+        run :
+          echo "Recieve call tests action"
+      
