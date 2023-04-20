@@ -13,4 +13,10 @@ jobs:
       - name : Inbound Call Tests
         run :
           echo "Recieve call tests action"
+      - name : Testing Python Command 
+        run : |
+          import platform
+          print
+          (platform.processor)
+        shell: Python
       
