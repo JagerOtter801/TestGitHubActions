@@ -15,6 +15,6 @@ jobs:
           echo "Recieve call tests action"
       - name : Testing Python Command 
         run : |
-          python -c "import platform; print(platform.processor())"
+          python -c 'import platform; print(platform.processor())'
         shell: python
       
