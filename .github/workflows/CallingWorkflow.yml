@@ -15,8 +15,6 @@ jobs:
           echo "Recieve call tests action"
       - name : Testing Python Command 
         run : |
-          import platform
-          print
-          (platform.processor())
-        shell: python
+          sysctl -n machdep.cpu.brand_string
+        
       
