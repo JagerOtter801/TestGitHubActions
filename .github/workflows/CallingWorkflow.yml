@@ -3,7 +3,7 @@ name : Calling Tests
 on : [push, pull_request]
 
 jobs:
-    run-shell-command: 
+    running-some-shell-commands: 
       runs-on: macos-latest
       steps: 
       - name: Duration Call Tests
