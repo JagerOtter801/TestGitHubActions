@@ -3,7 +3,7 @@ name : Calling Tests
 on : [push, pull_request]
 
 jobs:
-    running-some-shell-commands: 
+    this-is-the-name-of-the-job: 
       runs-on: macos-latest
       steps: 
       - name: Duration Call Tests
@@ -18,7 +18,13 @@ jobs:
           sysctl -n machdep.cpu.brand_string
       - name: Say Hello World
         run:
-          echo "hello world"    
+          echo "hello world"  
+
+    this-is-a-second-job:
+      runs-on: ubuntu-latest
+      steps:
+          - run :
+              echo "Im running a second job here"
 
         
       
