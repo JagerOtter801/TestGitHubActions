@@ -1,6 +1,6 @@
 name : Calling Tests
 
-on : [push]
+on : [push, pull_request]
 
 jobs:
     run-shell-command: 
@@ -13,8 +13,12 @@ jobs:
       - name : Inbound Call Tests
         run :
           echo "Recieve call tests action"
-      - name : Testing Python Command 
+      - name : Testing Shell Command
         run : |
           sysctl -n machdep.cpu.brand_string
+      - name: Say Hello World
+        run:
+          echo "hello world"    
+
         
       
